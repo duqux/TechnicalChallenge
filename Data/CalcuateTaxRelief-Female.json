@@ -1,0 +1,46 @@
+[
+  {
+    "birthday": "30121998",
+    "gender": "F",
+    "name": "Shua",
+    "natid": "9328493242",
+    "salary": "7000",
+    "tax": "700"
+  },
+
+  {
+    "birthday": "18021986",
+    "gender": "F",
+    "name": "Vernon",
+    "natid": "532532626",
+    "salary": "5000",
+    "tax": "500"
+  },
+
+    {
+    "birthday": "18021962",
+    "gender": "F",
+    "name": "Dino",
+    "natid": "123456",
+    "salary": "2341",
+    "tax": "10"
+  },
+
+   {
+    "birthday": "18021948",
+    "gender": "F",
+    "name": "Mingyu",
+    "natid": "1234",
+    "salary": "7458",
+    "tax": "900"
+  },
+
+   {
+    "birthday": "18021900",
+    "gender": "F",
+    "name": "Seungcheol",
+    "natid": "1234",
+    "salary": "6020",
+    "tax": "300"
+  }
+]

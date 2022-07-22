@@ -1,0 +1,88 @@
+[
+  {
+    "birthday": "12301995",
+    "gender": "M",
+    "name": "Shua",
+    "natid": "9328493242",
+    "salary": "7000",
+    "tax": "700"
+  },
+
+  {
+    "birthday": "18021998",
+    "gender": "M",
+    "name": "123",
+    "natid": "532532626",
+    "salary": "5000",
+    "tax": "500"
+  },
+
+  {
+    "birthday": "18021998",
+    "gender": "Male",
+    "name": "Wen Jun Hui",
+    "natid": "532532626",
+    "salary": "5000",
+    "tax": "500"
+  },
+
+    {
+    "birthday": "18021998",
+    "gender": "123",
+    "name": "Ming Hao",
+    "natid": "532532626",
+    "salary": "5000",
+    "tax": "500"
+  },
+
+    {
+    "birthday": "18021998",
+    "gender": "M",
+    "name": "Ming Hao",
+    "natid": "532532626",
+    "salary": "abc",
+    "tax": "500"
+  },
+
+    {
+    "birthday": "18021998",
+    "gender": "M",
+    "name": "Wonu",
+    "natid": "532532626",
+    "salary": "-111",
+    "tax": "500"
+  },
+
+    {
+    "birthday": "18021998",
+    "gender": "M",
+    "name": "Wonu",
+    "natid": "532532626",
+    "salary": "12#",
+    "tax": "111"
+  },
+    {
+    "birthday": "18021998",
+    "gender": "M",
+    "name": "Wonu",
+    "natid": "532532626",
+    "salary": "1222",
+    "tax": "abc"
+  },
+   {
+    "birthday": "18021998",
+    "gender": "M",
+    "name": "Wonu",
+    "natid": "532532626",
+    "salary": "1700",
+    "tax": "-111"
+  },
+   {
+    "birthday": "18021998",
+    "gender": "M",
+    "name": "Wonu",
+    "natid": "532532626",
+    "salary": "1700",
+    "tax": "12#"
+  }
+]
