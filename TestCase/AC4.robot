@@ -19,57 +19,57 @@ ${expectednatid35}  1234
 ${currentyear}  2022
 
 *** Test Cases ***
-#AC4_TC033
-#    create session  RetrieveData  ${url}
-#    ${taxrelieflist} =  GET On Session  RetrieveData  /calculator/taxRelief
-#    log to console  ${taxrelieflist.content}
-#    ${list} =  Convert To String  ${taxrelieflist.content}
-#    write_variable_in_file  ${list}
+AC4_TC033
+    create session  RetrieveData  ${url}
+    ${taxrelieflist} =  GET On Session  RetrieveData  /calculator/taxRelief
+    log to console  ${taxrelieflist.content}
+    ${list} =  Convert To String  ${taxrelieflist.content}
+    write_variable_in_file  ${list}
 
-#AC4_TC034
-#    create session  AddData  ${url}
-#    ${json} =  Get file  Data/PersonDetails.json
-#    ${object} =  Evaluate  json.loads("""${json}""")  json
-#    &{body} =  Create Dictionary  birthday=${object[2]["birthday"]}  gender=${object[2]["gender"]}  name=${object[2]["name"]}  natid=${object[2]["natid"]}  salary=${object[2]["salary"]}  tax=${object[2]["tax"]}
-#    ${response}=  POST On Session  AddData  /calculator/insert  json=${body}
-#    ${code}=  convert to string  ${response.status_code}
-#    should be equal  ${code}  202
-#    Set Environment Variable  webdriver.chrome.driver  chromedriver
-#    Open browser   ${url}  chrome
-#    ${natid}  Get Text  xpath:(//td)[last()-1]
-#    log to console  ${natid}
-#    Should Be True  """${natid}""" == """${expectednatid34}"""
-#    close browser
+AC4_TC034
+    create session  AddData  ${url}
+    ${json} =  Get file  Data/PersonDetails.json
+    ${object} =  Evaluate  json.loads("""${json}""")  json
+    &{body} =  Create Dictionary  birthday=${object[2]["birthday"]}  gender=${object[2]["gender"]}  name=${object[2]["name"]}  natid=${object[2]["natid"]}  salary=${object[2]["salary"]}  tax=${object[2]["tax"]}
+    ${response}=  POST On Session  AddData  /calculator/insert  json=${body}
+    ${code}=  convert to string  ${response.status_code}
+    should be equal  ${code}  202
+    Set Environment Variable  webdriver.chrome.driver  chromedriver
+    Open browser   ${url}  chrome
+    ${natid}  Get Text  xpath:(//td)[last()-1]
+    log to console  ${natid}
+    Should Be True  """${natid}""" == """${expectednatid34}"""
+    close browser
 
-#AC4_TC035
-#    create session  AddData  ${url}
-#    ${json} =  Get file  Data/PersonDetails.json
-#    ${object} =  Evaluate  json.loads("""${json}""")  json
-#    &{body} =  Create Dictionary  birthday=${object[3]["birthday"]}  gender=${object[3]["gender"]}  name=${object[3]["name"]}  natid=${object[3]["natid"]}  salary=${object[3]["salary"]}  tax=${object[3]["tax"]}
-#    ${response}=  POST On Session  AddData  /calculator/insert  json=${body}
-#    ${code}=  convert to string  ${response.status_code}
-#    should be equal  ${code}  202
-#    Set Environment Variable  webdriver.chrome.driver  chromedriver
-#    Open browser   ${url}  chrome
-#    ${natid}  Get Text  xpath:(//td)[last()-1]
-#    log to console  ${natid}
-#    Should Be True  """${natid}""" == """${expectednatid35}"""
-#    close browser
+AC4_TC035
+    create session  AddData  ${url}
+    ${json} =  Get file  Data/PersonDetails.json
+    ${object} =  Evaluate  json.loads("""${json}""")  json
+    &{body} =  Create Dictionary  birthday=${object[3]["birthday"]}  gender=${object[3]["gender"]}  name=${object[3]["name"]}  natid=${object[3]["natid"]}  salary=${object[3]["salary"]}  tax=${object[3]["tax"]}
+    ${response}=  POST On Session  AddData  /calculator/insert  json=${body}
+    ${code}=  convert to string  ${response.status_code}
+    should be equal  ${code}  202
+    Set Environment Variable  webdriver.chrome.driver  chromedriver
+    Open browser   ${url}  chrome
+    ${natid}  Get Text  xpath:(//td)[last()-1]
+    log to console  ${natid}
+    Should Be True  """${natid}""" == """${expectednatid35}"""
+    close browser
 
-#AC4_TC036 KIV
-#    create session  AddData  ${url}
-#    ${json} =  Get file  Data/PersonDetails.json
-#    ${object} =  Evaluate  json.loads("""${json}""")  json
-#    &{body} =  Create Dictionary  birthday=${object[3]["birthday"]}  gender=${object[3]["gender"]}  name=${object[3]["name"]}  natid=${object[3]["natid"]}  salary=${object[3]["salary"]}  tax=${object[3]["tax"]}
-#    ${response}=  POST On Session  AddData  /calculator/insert  json=${body}
-#    ${code}=  convert to string  ${response.status_code}
-#    should be equal  ${code}  202
-#    Set Environment Variable  webdriver.chrome.driver  chromedriver
-#    Open browser   ${url}  chrome
-#    ${taxrelief}  Get Text  xpath:(//td)[last()]
-#    log to console  ${taxrelief}
-#    Should Be True  """${taxrelief}""" == """${taxrelief}"""
-#    close browser
+AC4_TC036 KIV
+    create session  AddData  ${url}
+    ${json} =  Get file  Data/PersonDetails.json
+    ${object} =  Evaluate  json.loads("""${json}""")  json
+    &{body} =  Create Dictionary  birthday=${object[3]["birthday"]}  gender=${object[3]["gender"]}  name=${object[3]["name"]}  natid=${object[3]["natid"]}  salary=${object[3]["salary"]}  tax=${object[3]["tax"]}
+    ${response}=  POST On Session  AddData  /calculator/insert  json=${body}
+    ${code}=  convert to string  ${response.status_code}
+    should be equal  ${code}  202
+    Set Environment Variable  webdriver.chrome.driver  chromedriver
+    Open browser   ${url}  chrome
+    ${taxrelief}  Get Text  xpath:(//td)[last()]
+    log to console  ${taxrelief}
+    Should Be True  """${taxrelief}""" == """${taxrelief}"""
+    close browser
 
 AC4_TC037
     create session  AddData  ${url}
